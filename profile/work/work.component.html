@@ -1,0 +1,75 @@
+<form class="light-yellow">
+  <div class="container pb-2">
+    <div class="form-group row pt-2">
+      <label for="company" class="col-2 col-form-label col-form-label-sm">Company</label>
+      <div class="col-10">
+        <input type="email" class="form-control form-control-sm" id="company" name="company">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="designation" class="col-2 col-form-label col-form-label-sm">Designation</label>
+      <div class="col-10">
+        <input type="email" class="form-control form-control-sm" id="designation" name="designation">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="location" class="col-2 col-form-label col-form-label-sm">City/Location</label>
+      <div class="col-10">
+        <input type="email" class="form-control form-control-sm" id="location">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="description" class="col-2 col-form-label col-form-label-sm">Description</label>
+      <div class="col-10">
+        <textarea class="form-control form-control-sm" id="description" name="description"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-2 col-form-label col-form-label-sm">Period</label>
+      <div class="col-10">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="working">
+              <label class="custom-control-label" for="working">Still working</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="input-group mb-2">
+              <input type="text" aria-label="workStartDate" id="workStartDate" name="workStartDate" placeholder="dd"
+                class="form-control form-control-sm">
+              <input type="text" aria-label="workStartDate" id="workStartMonth" name="workStartMonth" placeholder="mm"
+                class="form-control form-control-sm">
+              <input type="text" aria-label="workStartDate" id="workStartYear" name="workStartYear" placeholder="yyyy"
+                class="form-control form-control-sm">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="input-group mb-2">
+              <input type="text" aria-label="workEndDate" id="workEndDate" name="workEndDate" placeholder="dd" class="form-control form-control-sm">
+              <input type="text" aria-label="workEndMonth" id="workEndMonth" name="workEndMonth" placeholder="mm" class="form-control form-control-sm">
+              <input type="text" aria-label="workEndYear" id="workEndYear" name="workEndYear" placeholder="yyyy" class="form-control form-control-sm">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group row">
+      <div class="col-2">
+        <select class="form-control form-control-sm">
+          <option value="public"><i class="material-icons left">add</i>Public</option>
+          <option value="onlyMe"><i class="material-icons left">add</i>Only me</option>
+        </select>
+      </div>
+      <div class="col-10">
+        <input type="submit" class="btn btn-primary btn-sm mr-2">
+        <button class="btn btn-light btn-sm">Cancel</button>
+      </div>
+    </div>
+  </div>
+</form>

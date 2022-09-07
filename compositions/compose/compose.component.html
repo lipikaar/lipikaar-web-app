@@ -1,0 +1,51 @@
+<form>
+  <div class="card">
+    <div class="card-body">
+      <div class="media">
+        <img src="../../../assets/j.png" class="align-self-center mr-3 rounded-circle img-3" alt="...">
+        <div class="media-body mt-2">
+          <!-- <span class="badge badge-pill badge-primary"> -->
+          <textarea class="form-control-1 w-100" name="content" id="content" placeholder="Write something here..."
+            required></textarea>
+          <!-- </span> -->
+        </div>
+      </div>
+      <hr>
+      <button class="btn btn-secondary mr-5"><i class="material-icons left">photo</i>Photo</button>
+      <input type="file" hidden>
+      <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary active">
+          <input type="radio" name="options" id="option1" autocomplete="off" checked> Poem
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off"> Story
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Ghazal
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option4" autocomplete="off"> Geet
+        </label>
+      </div>
+      <hr>
+      <div class="custom-control custom-checkbox my-1 mr-sm-2">
+        <input type="checkbox" class="custom-control-input" id="licence">
+        <label class="custom-control-label" for="license">General license</label>
+      </div>
+      <p>Please make sure that you have read all terms and conditions.</p>
+    </div>
+    <div class="card-footer">
+      <div class="row">
+        <div class="col-4">
+          <select class="form-control form-control-sm">
+            <option value="public"><i class="material-icons left">add</i>Public</option>
+            <option value="Only me"><i class="material-icons left">add</i>Only me</option>
+          </select>
+        </div>
+        <div class="col-8">
+          <button class="btn btn-primary btn-block">Post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</form>

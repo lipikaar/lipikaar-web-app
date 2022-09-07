@@ -1,0 +1,91 @@
+<form class="light-yellow">
+  <div class="container pb-2">
+    <div class="form-group row pt-2">
+      <label for="School" class="col-2 col-form-label col-form-label-sm">School</label>
+      <div class="col-10">
+        <input type="text" class="form-control form-control-sm" id="school" name="school">
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-2 col-form-label col-form-label-sm">Period</label>
+      <div class="col-10">
+        <div class="row">
+          <div class="col">
+            <div class="custom-control custom-checkbox my-1 mr-sm-2">
+              <input type="checkbox" class="custom-control-input" id="studying">
+              <label class="custom-control-label" for="studying">Still Studying</label>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="input-group mb-2">
+              <input type="text" aria-label="workStartDate" id="workStartDate" name="workStartDate" placeholder="dd"
+                class="form-control form-control-sm">
+              <input type="text" aria-label="workStartDate" id="workStartMonth" name="workStartMonth" placeholder="mm"
+                class="form-control form-control-sm">
+              <input type="text" aria-label="workStartDate" id="workStartYear" name="workStartYear" placeholder="yyyy"
+                class="form-control form-control-sm">
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-5">
+            <div class="input-group mb-2">
+              <input type="text" aria-label="workEndDate" id="workEndDate" name="workEndDate" placeholder="dd" class="form-control form-control-sm">
+              <input type="text" aria-label="workEndMonth" id="workEndMonth" name="workEndMonth" placeholder="mm" class="form-control form-control-sm">
+              <input type="text" aria-label="workEndYear" id="workEndYear" name="workEndYear" placeholder="yyyy" class="form-control form-control-sm">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label class="col-2 col-form-label col-form-label-sm">Graduation</label>
+      <div class="col-10">
+        <div class="custom-control custom-checkbox my-1 mr-sm-2">
+          <input type="checkbox" class="custom-control-input" id="graduation" name="graduation">
+          <label class="custom-control-label" for="graduation">Graduation</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="description" class="col-2 col-form-label col-form-label-sm">Description</label>
+      <div class="col-10">
+        <textarea class="form-control form-control-sm" id="description" name="description"></textarea>
+      </div>
+    </div>
+    <div class="form-group row">
+      <label for="concentrations" class="col-2 col-form-label col-form-label-sm">Concentrations</label>
+      <div class="col-10">
+        <input type="text" class="form-control form-control-sm" id="contentrations" name="concentrations">
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-2"></div>
+      <div class="col-10">
+        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+          <label class="btn btn-secondary active">
+            <input type="radio" name="type" id="college" autocomplete="off" checked> College
+          </label>
+          <label class="btn btn-secondary">
+            <input type="radio" name="type" id="highSchool" autocomplete="off"> High School
+          </label>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="form-group row">
+      <div class="col-2">
+        <select class="form-control form-control-sm">
+            <option value="public"><i class="material-icons left">add</i>Public</option>
+            <option value="Only me"><i class="material-icons left">add</i>Only me</option>
+        </select>
+      </div>
+      <div class="col-10">
+        <input type="submit" class="btn btn-primary btn-sm mr-2">
+        <button class="btn btn-light btn-sm">Cancel</button>
+      </div>
+    </div>
+  </div>
+</form>

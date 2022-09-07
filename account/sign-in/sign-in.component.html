@@ -1,0 +1,18 @@
+<form class="form" (ngSubmit)="checkCredentials()">
+  <div class="form-row">
+    <div class="form-group col-5">
+      <input type="text" [(ngModel)]="user.userName" #name="ngModel" name="userName" id="userName" class="form-control"
+        placeholder="Email or Phone" aria-label="userName" aria-describedby="basic-addon1" required>
+    </div>
+    <div class="form-group col-5">
+      <input type="password" [(ngModel)]="user.password" #name="ngModel" name="password" id="password" class="form-control"
+        placeholder="Password" aria-label="password" aria-describedby="basic-addon2" required>
+      <small id="passwordHelpBlock" class="form-text text-muted">
+        <a href="/">Forgotten account?</a>
+      </small>
+    </div>
+    <div class="form-group col-2">
+      <input type=submit class="btn btn-primary btn-sm" value="Sign in">
+    </div>
+  </div>
+</form>

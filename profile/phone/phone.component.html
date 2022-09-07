@@ -1,0 +1,38 @@
+<form class="light-yellow">
+    <div class="container pb-2">
+      <div class="form-group row pt-2">
+        <label for="email" class="col-2 col-form-label col-form-label-sm">Email</label>
+        <div class="col-10">
+          <div class="row">
+            <div class="col-3">
+              <select id="phoneRegion" name="phoneRegion" class="form-control form-control-sm">
+                <option value="91">In (+91)</option>
+              </select>
+            </div>
+            <div class="col-6">
+              <input type="tel" class="form-control form-control-sm" id="phone" name="phone">
+            </div>
+            <div class="col-3">
+              <select name="privacyEmail" id="privacyEmail" class="form-control form-control-sm">
+                  <option value="public"><i class="material-icons left">add</i>Public</option>
+                  <option value="Only me"><i class="material-icons left">add</i>Only me</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <a class="btn"><i class="material-icons left">add</i>Add another phone</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <div class="form-group row">
+        <div class="col-2"></div>
+        <div class="col-10">
+          <input type="submit" class="btn btn-primary btn-sm mr-2">
+          <button class="btn btn-light btn-sm">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </form>
